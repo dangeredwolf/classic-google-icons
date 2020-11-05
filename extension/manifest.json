@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+	"version": "1.0.0",
+    "name": "Classic Google Icons", 
+    "description": "Use the pre-2020 Material Design icons for Google products like Gmail, Calendar, and Maps.",
+	"background": {
+		"scripts": ["background.js"],
+		"persistent": true
+	},
+    "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+        "https://*.gstatic.com/*",
+        "https://*.google.com/*"
+    ],
+    "web_accessible_resources": [
+        "images/*"
+    ]
+}
