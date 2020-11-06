@@ -42,7 +42,7 @@ const rules = {
 	"https://ssl.gstatic.com/calendar/images/dynamiclogo/lUkwQcfJg4wWmQhhAFLWO0z3HjG6yOs9/calendar_30_2x.png": "icons/calendar/2x/cal_30_v2.png",
 	"https://ssl.gstatic.com/calendar/images/dynamiclogo/lUkwQcfJg4wWmQhhAFLWO0z3HjG6yOs9/calendar_31_2x.png": "icons/calendar/2x/cal_31_v2.png",
 	
-	"https://www.gstatic.com/companion/icon_assets/fgdY29RxT2yHBfEODHlF70ZI3ytOaPoX/calendar_v3_2x.png": "icons/calendar_2x.png",
+	"https://www.gstatic.com/companion/icon_assets/fgdY29RxT2yHBfEODHlF70ZI3ytOaPoX/calendar_v3_2x.png": "icons/calendar_40x.png",
 	"https://www.gstatic.com/companion/icon_assets/fgdY29RxT2yHBfEODHlF70ZI3ytOaPoX/logo_calendar_v3_64dp.svg": "icons/logo_calendar_64dp.svg",
 
 
@@ -135,7 +135,7 @@ const rules = {
 
 browser.webRequest.onBeforeRequest.addListener(
 	obj => {
-		console.log(obj);
+		//console.log(obj);
 		for (let i in rules) {
 			if (obj.url.match(new RegExp(i, "g"))) {
 				return {redirectUrl: browser.runtime.getURL("images/" + rules[i])}
@@ -145,3 +145,22 @@ browser.webRequest.onBeforeRequest.addListener(
 	{urls:["https://ssl.gstatic.com/*", "https://www.gstatic.com/*", "https://calendar.google.com/*", "https://www.google.com/*"]},
 	["blocking"]
 )
+
+browser.webNavigation.onDOMContentLoaded.addListener(function () {
+	browser.tabs.query({
+		active: true,
+	}, tabs => {
+		if (tabs && tabs[0] && tabs[0].favIconUrl) {
+			let tab = tabs[0];
+			for (let i in rules) {
+				if (tab.favIconUrl.match(new RegExp(i, "g"))) {
+					var newURL = browser.runtime.getURL("images/" + rules[i]);
+					browser.tabs.executeScript(tab.id, {
+						code: `var ilist=document.querySelectorAll('link[rel="shortcut icon"],link[rel="icon"],link[rel="favicon"]');if(ilist&&ilist[0])for(var elem of ilist)elem.href="${newURL}";console.log('classic-google-icons: Overrode favicon url')`
+					});
+				}
+			}
+		}
+	});
+}, 
+{ urls: ["https://*.google.com/*"] });
