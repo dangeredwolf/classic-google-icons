@@ -88,10 +88,10 @@ const rules = {
 	"https://ssl.gstatic.com/calendar/images/dynamiclogo/lUkwQcfJg4wWmQhhAFLWO0z3HjG6yOs9/calendar_29_2x.png": "icons/calendar/2x/cal_29_v2.png",
 	"https://ssl.gstatic.com/calendar/images/dynamiclogo/lUkwQcfJg4wWmQhhAFLWO0z3HjG6yOs9/calendar_30_2x.png": "icons/calendar/2x/cal_30_v2.png",
 	"https://ssl.gstatic.com/calendar/images/dynamiclogo/lUkwQcfJg4wWmQhhAFLWO0z3HjG6yOs9/calendar_31_2x.png": "icons/calendar/2x/cal_31_v2.png",
-
+	
 	"https://www.gstatic.com/companion/icon_assets/fgdY29RxT2yHBfEODHlF70ZI3ytOaPoX/calendar_v3_2x.png": "icons/calendar_40x.png",
 	"https://www.gstatic.com/companion/icon_assets/fgdY29RxT2yHBfEODHlF70ZI3ytOaPoX/logo_calendar_v3_64dp.svg": "icons/logo_calendar_64dp.svg",
-
+	
 	"https://calendar.google.com/googlecalendar/images/favicons_fttmIIlBXU2Ldf6JaL09WmFY3NDc1zq1/v2/calendar_1.ico": "favicons/calendar/1.ico",
 	"https://calendar.google.com/googlecalendar/images/favicons_fttmIIlBXU2Ldf6JaL09WmFY3NDc1zq1/v2/calendar_2.ico": "favicons/calendar/2.ico",
 	"https://calendar.google.com/googlecalendar/images/favicons_fttmIIlBXU2Ldf6JaL09WmFY3NDc1zq1/v2/calendar_3.ico": "favicons/calendar/3.ico",
@@ -155,7 +155,7 @@ const rules = {
 	"https://calendar.google.com/googlecalendar/images/favicons_fttmIIlBXU2Ldf6JaL09WmFY3NDc1zq1/v3/calendar_29.ico": "favicons/calendar/29.ico",
 	"https://calendar.google.com/googlecalendar/images/favicons_fttmIIlBXU2Ldf6JaL09WmFY3NDc1zq1/v3/calendar_30.ico": "favicons/calendar/30.ico",
 	"https://calendar.google.com/googlecalendar/images/favicons_fttmIIlBXU2Ldf6JaL09WmFY3NDc1zq1/v3/calendar_31.ico": "favicons/calendar/31.ico",
-
+	
 	/* Gmail */
 	"https://ssl.gstatic.com/ui/v1/icons/mail/rfr/unreadcountfavicon/2/1.png": "favicons/gmail/1.png",
 	"https://ssl.gstatic.com/ui/v1/icons/mail/rfr/unreadcountfavicon/2/2.png": "favicons/gmail/2.png",
@@ -210,7 +210,7 @@ browser.webNavigation.onDOMContentLoaded.addListener(function () {
 				if (tab.favIconUrl.match(new RegExp(i, "g"))) {
 					var newURL = browser.runtime.getURL("images/" + rules[i]);
 					browser.tabs.executeScript(tab.id, {
-						code: `var ilist=document.querySelectorAll('link[rel="shortcut icon"],link[rel="icon"],link[rel="favicon"]');if(ilist&&ilist[0])for(var elem of ilist)elem.href="${newURL}";console.log('classic-google-icons: Overrode favicon url')`
+						code: `var cgiInterval;function cgiFav(){var ilist=document.querySelectorAll('link[rel="shortcut icon"],link[rel="icon"],link[rel="favicon"]');if(ilist&&ilist[0])for(var elem of ilist){if(elem.href!="${newURL}"){elem.href="${newURL}"}}}cgiFav();clearInterval(cgiInterval);cgiInterval=setInterval(cgiFav,5000);`
 					});
 				}
 			}
