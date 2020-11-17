@@ -14,6 +14,49 @@ const rules = {
 	"https://www.gstatic.com/images/branding/product/2x/gmail_2020q4_32dp.png": "favicons/gmail.ico",
 	"https://www.gstatic.com/images/branding/product/2x/gmail_2020q4_16dp.png": "favicons/gmail.ico",
 
+	/* Meet */
+	"https://www.gstatic.com/meet/google_meet_horizontal_wordmark_2020q4_1x_icon_124_40_2373e79660dabbf194273d27aa7ee1f5.png": "icons/google_meet_horizontal_wordmark_icon_40dp.png",
+	"https://www.gstatic.com/meet/google_meet_horizontal_wordmark_2020q4_2x_icon_124_40_292e71bcb52a56e2a9005164118f183b.png": "icons/google_meet_horizontal_wordmark_icon_80dp.png",
+	"https://www.gstatic.com/meet/google_meet_primary_horizontal_2020q4_logo_be3f8c43950bd1e313525ada2ce0df44.svg": "icons/google_meet_primary_horizontal.svg",
+	"https://www.gstatic.com/meet/meet_logo_light_2020q4_a18dd0004704d4dfc24b1519e599eadc.svg": "icons/google_meet_primary_horizontal.svg",
+	"https://fonts.gstatic.com/s/i/productlogos/meet_2020q4/v1/web-24dp/logo_meet_2020q4_color_1x_web_24dp.png": "icons/meet_64dp.png",
+	"https://fonts.gstatic.com/s/i/productlogos/meet_2020q4/v1/web-32dp/logo_meet_2020q4_color_1x_web_32dp.png": "icons/meet_64dp.png",
+	"https://fonts.gstatic.com/s/i/productlogos/meet_2020q4/v1/web-36dp/logo_meet_2020q4_color_1x_web_36dp.png": "icons/meet_64dp.png",
+	"https://fonts.gstatic.com/s/i/productlogos/meet_2020q4/v1/web-48dp/logo_meet_2020q4_color_1x_web_48dp.png": "icons/meet_64dp.png",
+	"https://fonts.gstatic.com/s/i/productlogos/meet_2020q4/v1/web-64dp/logo_meet_2020q4_color_1x_web_64dp.png": "icons/meet_64dp.png",
+	"https://fonts.gstatic.com/s/i/productlogos/meet_2020q4/v1/web-96dp/logo_meet_2020q4_color_1x_web_96dp.png": "icons/meet_64dp.png",
+	"https://fonts.gstatic.com/s/i/productlogos/meet_2020q4/v1/web-512dp/logo_meet_2020q4_color_1x_web_512dp.png": "icons/meet_64dp.png",
+	"https://lh3.googleusercontent.com/5CsRqfMEP1Rv-PPv9G4962lyEuvb4roSLJHJQWPbmCa51AmvynfoGfoKsKiS87QhX07xQMZAeLp8qoSy7CjVZkXJ1WapQiJkroCeJw": "icons/meet_64dp.png",
+
+	/* Drive */
+	"https://ssl.gstatic.com/images/branding/product/1x/drive_2020q4_48dp.png": "icons/drive_48dp.png",
+	"https://ssl.gstatic.com/images/branding/product/2x/drive_2020q4_48dp.png": "icons/drive_48dp@2x.png",
+	"https://ssl.gstatic.com/images/branding/product/1x/drive_2020q4_32dp.png": "icons/drive_48dp.png",
+	"https://kstatic.googleusercontent.com/files/f4b4fbcc6119576da7ab3f68270196009fc1b16f1927910842d793c385115593b6dd5fbe9a1e21fe64f3cbbc509c3a02c95ebc9635f76c355282482986f1fe7d": "icons/Logo_Drive_01.svg",
+	"https://ssl.gstatic.com/images/branding/product/2x/hh_drive_36dp.png": "icons/drive_48dp.png",
+	"https://ssl.gstatic.com/images/branding/product/2x/hh_drive_24dp.png": "icons/drive_48dp.png",
+
+	/* Maps */
+	"https://www.google.com/images/branding/product/ico/maps15_bnuw3a_32dp.ico": "favicons/maps.ico",
+	"https://www.gstatic.com/companion/icon_assets/maps_v2_2x.png": "icons/maps_48x.png",
+	"https://www.gstatic.com/companion/icon_assets/logo_maps_v2_64dp.svg": "icons/maps_256x.png",
+	"https://lh3.googleusercontent.com/9tLfTpdILdHDAvGrRm7GdbjWdpbWSMOa0csoQ8pUba9tLP8tq7M4Quks1xuMQAVnAxVfryiDXRzZ-KDnkPv8Sm4g_YFom1ltQHjQ6Q": "icons/maps_512dp.png",
+	"https://www.google.com/maps/about/images/icons/maps_512dp.png": "icons/maps_512dp.png",
+	"https://www.google.com/maps/about/images/icons/maps_32dp.png": "icons/maps_512dp.png",
+	"https://www.google.com/maps/about/images/icons/maps_16dp.png": "icons/maps_512dp.png",
+
+	/* Keep */
+	"https://www.gstatic.com/images/branding/product/1x/keep_2020q4_48dp.png": "icons/keep_48dp.png",
+	"https://www.gstatic.com/images/branding/product/2x/keep_2020q4_48dp.png": "icons/keep_48dp@2x.png",
+	"https://ssl.gstatic.com/keep/icon_2020q4v2_128.png": "icons/keep_48dp@2x.png",
+	"https://ssl.gstatic.com/keep/keep_2020q4v2.ico": "icons/keep_48dp@2x.png",
+
+	/* Photos */
+	"https://ssl.gstatic.com/social/photosui/images/logo/1x/photos_64dp.png": "favicons/photos.ico",
+
+	/* Spritesheet */
+	"https://ssl.gstatic.com/gb/images/p1_5df01b81.png": "icons/p1_5df01b81.png",
+	
 
 	/* Calendar */
 	"https://ssl.gstatic.com/calendar/images/dynamiclogo/lUkwQcfJg4wWmQhhAFLWO0z3HjG6yOs9/calendar_1_2x.png": "icons/calendar/2x/cal_01_v2.png",
@@ -48,7 +91,6 @@ const rules = {
 
 	"https://www.gstatic.com/companion/icon_assets/fgdY29RxT2yHBfEODHlF70ZI3ytOaPoX/calendar_v3_2x.png": "icons/calendar_40x.png",
 	"https://www.gstatic.com/companion/icon_assets/fgdY29RxT2yHBfEODHlF70ZI3ytOaPoX/logo_calendar_v3_64dp.svg": "icons/logo_calendar_64dp.svg",
-
 
 	"https://calendar.google.com/googlecalendar/images/favicons_fttmIIlBXU2Ldf6JaL09WmFY3NDc1zq1/v2/calendar_1.ico": "favicons/calendar/1.ico",
 	"https://calendar.google.com/googlecalendar/images/favicons_fttmIIlBXU2Ldf6JaL09WmFY3NDc1zq1/v2/calendar_2.ico": "favicons/calendar/2.ico",
@@ -114,48 +156,35 @@ const rules = {
 	"https://calendar.google.com/googlecalendar/images/favicons_fttmIIlBXU2Ldf6JaL09WmFY3NDc1zq1/v3/calendar_30.ico": "favicons/calendar/30.ico",
 	"https://calendar.google.com/googlecalendar/images/favicons_fttmIIlBXU2Ldf6JaL09WmFY3NDc1zq1/v3/calendar_31.ico": "favicons/calendar/31.ico",
 
-	/* Meet */
-	"https://www.gstatic.com/meet/google_meet_horizontal_wordmark_2020q4_1x_icon_124_40_2373e79660dabbf194273d27aa7ee1f5.png": "icons/google_meet_horizontal_wordmark_icon_40dp.png",
-	"https://www.gstatic.com/meet/google_meet_horizontal_wordmark_2020q4_2x_icon_124_40_292e71bcb52a56e2a9005164118f183b.png": "icons/google_meet_horizontal_wordmark_icon_80dp.png",
-	"https://www.gstatic.com/meet/google_meet_primary_horizontal_2020q4_logo_be3f8c43950bd1e313525ada2ce0df44.svg": "icons/google_meet_primary_horizontal.svg",
-	"https://www.gstatic.com/meet/meet_logo_light_2020q4_a18dd0004704d4dfc24b1519e599eadc.svg": "icons/google_meet_primary_horizontal.svg",
-	"https://fonts.gstatic.com/s/i/productlogos/meet_2020q4/v1/web-24dp/logo_meet_2020q4_color_1x_web_24dp.png": "icons/meet_64dp.png",
-	"https://fonts.gstatic.com/s/i/productlogos/meet_2020q4/v1/web-32dp/logo_meet_2020q4_color_1x_web_32dp.png": "icons/meet_64dp.png",
-	"https://fonts.gstatic.com/s/i/productlogos/meet_2020q4/v1/web-36dp/logo_meet_2020q4_color_1x_web_36dp.png": "icons/meet_64dp.png",
-	"https://fonts.gstatic.com/s/i/productlogos/meet_2020q4/v1/web-48dp/logo_meet_2020q4_color_1x_web_48dp.png": "icons/meet_64dp.png",
-	"https://fonts.gstatic.com/s/i/productlogos/meet_2020q4/v1/web-64dp/logo_meet_2020q4_color_1x_web_64dp.png": "icons/meet_64dp.png",
-	"https://fonts.gstatic.com/s/i/productlogos/meet_2020q4/v1/web-96dp/logo_meet_2020q4_color_1x_web_96dp.png": "icons/meet_64dp.png",
-	"https://fonts.gstatic.com/s/i/productlogos/meet_2020q4/v1/web-512dp/logo_meet_2020q4_color_1x_web_512dp.png": "icons/meet_64dp.png",
-	"https://lh3.googleusercontent.com/5CsRqfMEP1Rv-PPv9G4962lyEuvb4roSLJHJQWPbmCa51AmvynfoGfoKsKiS87QhX07xQMZAeLp8qoSy7CjVZkXJ1WapQiJkroCeJw": "icons/meet_64dp.png",
-
-	/* Drive */
-	"https://ssl.gstatic.com/images/branding/product/1x/drive_2020q4_48dp.png": "icons/drive_48dp.png",
-	"https://ssl.gstatic.com/images/branding/product/2x/drive_2020q4_48dp.png": "icons/drive_48dp@2x.png",
-	"https://ssl.gstatic.com/images/branding/product/1x/drive_2020q4_32dp.png": "icons/drive_48dp.png",
-	"https://kstatic.googleusercontent.com/files/f4b4fbcc6119576da7ab3f68270196009fc1b16f1927910842d793c385115593b6dd5fbe9a1e21fe64f3cbbc509c3a02c95ebc9635f76c355282482986f1fe7d": "icons/Logo_Drive_01.svg",
-	"https://ssl.gstatic.com/images/branding/product/2x/hh_drive_36dp.png": "icons/drive_48dp.png",
-	"https://ssl.gstatic.com/images/branding/product/2x/hh_drive_24dp.png": "icons/drive_48dp.png",
-
-	/* Maps */
-	"https://www.google.com/images/branding/product/ico/maps15_bnuw3a_32dp.ico": "favicons/maps.ico",
-	"https://www.gstatic.com/companion/icon_assets/maps_v2_2x.png": "icons/maps_48x.png",
-	"https://www.gstatic.com/companion/icon_assets/logo_maps_v2_64dp.svg": "icons/maps_256x.png",
-	"https://lh3.googleusercontent.com/9tLfTpdILdHDAvGrRm7GdbjWdpbWSMOa0csoQ8pUba9tLP8tq7M4Quks1xuMQAVnAxVfryiDXRzZ-KDnkPv8Sm4g_YFom1ltQHjQ6Q": "icons/maps_512dp.png",
-	"https://www.google.com/maps/about/images/icons/maps_512dp.png": "icons/maps_512dp.png",
-	"https://www.google.com/maps/about/images/icons/maps_32dp.png": "icons/maps_512dp.png",
-	"https://www.google.com/maps/about/images/icons/maps_16dp.png": "icons/maps_512dp.png",
-
-	/* Keep */
-	"https://www.gstatic.com/images/branding/product/1x/keep_2020q4_48dp.png": "icons/keep_48dp.png",
-	"https://www.gstatic.com/images/branding/product/2x/keep_2020q4_48dp.png": "icons/keep_48dp@2x.png",
-	"https://ssl.gstatic.com/keep/icon_2020q4v2_128.png": "icons/keep_48dp@2x.png",
-	"https://ssl.gstatic.com/keep/keep_2020q4v2.ico": "icons/keep_48dp@2x.png",
-
-	/* Photos */
-	"https://ssl.gstatic.com/social/photosui/images/logo/1x/photos_64dp.png": "favicons/photos.ico",
-
-	/* Spritesheet */
-	"https://ssl.gstatic.com/gb/images/p1_5df01b81.png": "icons/p1_5df01b81.png"
+	/* Gmail */
+	"https://ssl.gstatic.com/ui/v1/icons/mail/rfr/unreadcountfavicon/2/1.png": "favicons/gmail/1.png",
+	"https://ssl.gstatic.com/ui/v1/icons/mail/rfr/unreadcountfavicon/2/2.png": "favicons/gmail/2.png",
+	"https://ssl.gstatic.com/ui/v1/icons/mail/rfr/unreadcountfavicon/2/3.png": "favicons/gmail/3.png",
+	"https://ssl.gstatic.com/ui/v1/icons/mail/rfr/unreadcountfavicon/2/4.png": "favicons/gmail/4.png",
+	"https://ssl.gstatic.com/ui/v1/icons/mail/rfr/unreadcountfavicon/2/5.png": "favicons/gmail/5.png",
+	"https://ssl.gstatic.com/ui/v1/icons/mail/rfr/unreadcountfavicon/2/6.png": "favicons/gmail/6.png",
+	"https://ssl.gstatic.com/ui/v1/icons/mail/rfr/unreadcountfavicon/2/7.png": "favicons/gmail/7.png",
+	"https://ssl.gstatic.com/ui/v1/icons/mail/rfr/unreadcountfavicon/2/8.png": "favicons/gmail/8.png",
+	"https://ssl.gstatic.com/ui/v1/icons/mail/rfr/unreadcountfavicon/2/9.png": "favicons/gmail/9.png",
+	"https://ssl.gstatic.com/ui/v1/icons/mail/rfr/unreadcountfavicon/2/10.png": "favicons/gmail/10.png",
+	"https://ssl.gstatic.com/ui/v1/icons/mail/rfr/unreadcountfavicon/2/11.png": "favicons/gmail/11.png",
+	"https://ssl.gstatic.com/ui/v1/icons/mail/rfr/unreadcountfavicon/2/12.png": "favicons/gmail/12.png",
+	"https://ssl.gstatic.com/ui/v1/icons/mail/rfr/unreadcountfavicon/2/13.png": "favicons/gmail/13.png",
+	"https://ssl.gstatic.com/ui/v1/icons/mail/rfr/unreadcountfavicon/2/14.png": "favicons/gmail/14.png",
+	"https://ssl.gstatic.com/ui/v1/icons/mail/rfr/unreadcountfavicon/2/15.png": "favicons/gmail/15.png",
+	"https://ssl.gstatic.com/ui/v1/icons/mail/rfr/unreadcountfavicon/2/16.png": "favicons/gmail/16.png",
+	"https://ssl.gstatic.com/ui/v1/icons/mail/rfr/unreadcountfavicon/2/17.png": "favicons/gmail/17.png",
+	"https://ssl.gstatic.com/ui/v1/icons/mail/rfr/unreadcountfavicon/2/18.png": "favicons/gmail/18.png",
+	"https://ssl.gstatic.com/ui/v1/icons/mail/rfr/unreadcountfavicon/2/19.png": "favicons/gmail/19.png",
+	"https://ssl.gstatic.com/ui/v1/icons/mail/rfr/unreadcountfavicon/2/20\\+.png": "favicons/gmail/20.png",
+	"https://ssl.gstatic.com/ui/v1/icons/mail/rfr/unreadcountfavicon/2/30\\+.png": "favicons/gmail/30+.png",
+	"https://ssl.gstatic.com/ui/v1/icons/mail/rfr/unreadcountfavicon/2/40\\+.png": "favicons/gmail/40+.png",
+	"https://ssl.gstatic.com/ui/v1/icons/mail/rfr/unreadcountfavicon/2/50\\+.png": "favicons/gmail/50+.png",
+	"https://ssl.gstatic.com/ui/v1/icons/mail/rfr/unreadcountfavicon/2/60\\+.png": "favicons/gmail/60+.png",
+	"https://ssl.gstatic.com/ui/v1/icons/mail/rfr/unreadcountfavicon/2/70\\+.png": "favicons/gmail/70+.png",
+	"https://ssl.gstatic.com/ui/v1/icons/mail/rfr/unreadcountfavicon/2/80\\+.png": "favicons/gmail/80+.png",
+	"https://ssl.gstatic.com/ui/v1/icons/mail/rfr/unreadcountfavicon/2/90\\+.png": "favicons/gmail/90+.png",
+	"https://ssl.gstatic.com/ui/v1/icons/mail/rfr/unreadcountfavicon/2/100\\+.png": "favicons/gmail/100+.png",
 }
 
 browser.webRequest.onBeforeRequest.addListener(
