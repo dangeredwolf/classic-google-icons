@@ -198,20 +198,23 @@ browser.webRequest.onBeforeRequest.addListener(
 	},
 	{urls: ["https://*.googleusercontent.com/*", "https://ssl.gstatic.com/*", "https://fonts.gstatic.com/*", "https://www.gstatic.com/*", "https://calendar.google.com/*", "https://www.google.com/*"]},
 	["blocking"]
-)
+);
+
+function isVivaldiTab(object) {
+	return (object && object['extData']) ? true : false;
+}
 
 browser.webNavigation.onDOMContentLoaded.addListener(function () {
-	browser.tabs.query({
-		active: true,
-	}, tabs => {
-		if (tabs && tabs[0] && tabs[0].favIconUrl) {
-			let tab = tabs[0];
-			for (let i in rules) {
-				if (tab.favIconUrl.match(new RegExp(i, "g"))) {
-					var newURL = browser.runtime.getURL("images/" + rules[i]);
-					browser.tabs.executeScript(tab.id, {
-						code: `var cgiInterval;function cgiFav(){var ilist=document.querySelectorAll('link[rel="shortcut icon"],link[rel="icon"],link[rel="favicon"]');if(ilist&&ilist[0])for(var elem of ilist){if(elem.href!="${newURL}"){elem.href="${newURL}"}}}cgiFav();clearInterval(cgiInterval);cgiInterval=setInterval(cgiFav,5000);`
-					});
+	browser.tabs.query({}, tabs => {
+		for (var tab of tabs) {
+			if (isVivaldiTab(tab) && tab.favIconUrl) {
+				for (let i in rules) {
+					if (tab.favIconUrl.match(new RegExp(i, "g"))) {
+						var newURL = browser.runtime.getURL("images/" + rules[i]);
+						browser.tabs.executeScript(tab.id, {
+							code: `if (typeof cgiFav == 'undefined') {var cgiInterval;function cgiFav(){var ilist=document.querySelectorAll('link[rel="shortcut icon"],link[rel="icon"],link[rel="favicon"]');if(ilist&&ilist[0])for(var elem of ilist){if(elem.href!="${newURL}"){elem.href="${newURL}"}}}cgiFav();clearInterval(cgiInterval);cgiInterval=setInterval(cgiFav,5000);}`
+						});
+					}
 				}
 			}
 		}
