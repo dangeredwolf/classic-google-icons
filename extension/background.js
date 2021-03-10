@@ -250,6 +250,11 @@ const rules = {
 	"https://ssl.gstatic.com/ui/v1/icons/mail/rfr/unreadcountfavicon/2/80\\+.png": "favicons/gmail/80+.png",
 	"https://ssl.gstatic.com/ui/v1/icons/mail/rfr/unreadcountfavicon/2/90\\+.png": "favicons/gmail/90+.png",
 	"https://ssl.gstatic.com/ui/v1/icons/mail/rfr/unreadcountfavicon/2/100\\+.png": "favicons/gmail/100+.png",
+
+	/* Sites */
+
+	"https://www.gstatic.com/images/branding/product/1x/sites_2020q4_48dp.png": "icons/sites_2020q4_48dp.png",
+	"https://www.gstatic.com/images/branding/product/2x/sites_2020q4_48dp.png": "icons/sites_2020q4_48dp@2x.png"
 }
 
 browser.webRequest.onBeforeRequest.addListener(
@@ -265,24 +270,44 @@ browser.webRequest.onBeforeRequest.addListener(
 	["blocking"]
 );
 
-function isVivaldiTab(object) {
-	return (object && object['extData']) ? true : false;
-}
+// function isVivaldiTab(object) {
+// 	return (object && object["extData"]) ? true : false;
+// }
 
-browser.webNavigation.onDOMContentLoaded.addListener(function () {
-	browser.tabs.query({}, tabs => {
-		for (var tab of tabs) {
-			if (isVivaldiTab(tab) && tab.favIconUrl) {
-				for (let i in rules) {
-					if (tab.favIconUrl.match(new RegExp(i, "g"))) {
-						var newURL = browser.runtime.getURL("images/" + rules[i]);
-						browser.tabs.executeScript(tab.id, {
-							code: `if (typeof cgiFav == 'undefined') {var cgiInterval;function cgiFav(){var ilist=document.querySelectorAll('link[rel="shortcut icon"],link[rel="icon"],link[rel="favicon"]');if(ilist&&ilist[0])for(var elem of ilist){if(elem.href!="${newURL}"){elem.href="${newURL}"}}}cgiFav();clearInterval(cgiInterval);cgiInterval=setInterval(cgiFav,5000);}`
-						});
-					}
-				}
-			}
-		}
-	});
-},
-{ urls: ["https://*.google.com/*"] });
+/* Replace Favicons on browsers that don't respect extension webRequest rules */
+
+// browser.webNavigation.onDOMContentLoaded.addListener(function () {
+// 	browser.tabs.query({}, tabs => {
+// 		for (var tab of tabs) {
+// 			if (isVivaldiTab(tab) && tab.favIconUrl) {
+// 				for (let i in rules) {
+// 					if (tab.favIconUrl.match(new RegExp(i, "g"))) {
+// 						var newURL = browser.runtime.getURL("images/" + rules[i]);
+// 						browser.tabs.executeScript(tab.id, {
+// 							code: `
+// 							if (typeof cgiFav == "undefined") {
+// 								var cgiInterval;
+//
+// 								function cgiFav(){
+// 									var ilist = document.querySelectorAll('link[rel="shortcut icon"], link[rel="icon"], link[rel="favicon"]');
+// 									if (ilist && ilist[0]) {
+// 										for (var elem of ilist) {
+// 											if (elem.href != "${newURL}") {
+// 												elem.href = "${newURL}";
+// 											}
+// 										}
+// 									}
+// 								}
+//
+// 								cgiFav();
+// 								clearInterval(cgiInterval);
+// 								cgiInterval = setInterval(cgiFav, 5000);
+// 							}`
+// 						});
+// 					}
+// 				}
+// 			}
+// 		}
+// 	});
+// },
+// { urls: ["https://*.google.com/*"] });
