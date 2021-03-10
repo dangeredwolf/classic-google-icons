@@ -50,6 +50,7 @@ const rules = {
 	"https://www.gstatic.com/images/branding/product/2x/keep_2020q4_48dp.png": "icons/keep_48dp@2x.png",
 	"https://ssl.gstatic.com/keep/icon_2020q4v2_128.png": "icons/keep_48dp@2x.png",
 	"https://ssl.gstatic.com/keep/keep_2020q4v2.ico": "icons/keep_48dp@2x.png",
+	"https://www.gstatic.com/companion/icon_assets/keep_2020q4v3_2x.png": "icons/keep_48dp@2x.png",
 
 	/* Photos */
 	"https://ssl.gstatic.com/social/photosui/images/logo/1x/photos_64dp.png": "favicons/photos.ico",
@@ -57,6 +58,7 @@ const rules = {
 	/* Spritesheet */
 	"https://ssl.gstatic.com/gb/images/p1_5df01b81.png": "icons/p1_5df01b81.png",
 	"https://ssl.gstatic.com/gb/images/p1_cfd8cf40.png": "icons/p1_cfd8cf40.png",
+	"https://ssl.gstatic.com/gb/images/p1_c9bc74a1.png": "icons/p1_c9bc74a1.png",
 
 
 	/* Calendar */
@@ -98,6 +100,7 @@ const rules = {
 	"https://ssl.gstatic.com/calendar/images/dynamiclogo_2020q4/calendar_7_2x.png": "icons/calendar/2x/cal_07_v2.png",
 	"https://ssl.gstatic.com/calendar/images/dynamiclogo_2020q4/calendar_8_2x.png": "icons/calendar/2x/cal_08_v2.png",
 	"https://ssl.gstatic.com/calendar/images/dynamiclogo_2020q4/calendar_9_2x.png": "icons/calendar/2x/cal_09_v2.png",
+	"https://ssl.gstatic.com/calendar/images/dynamiclogo_2020q4/calendar_10_2x.png": "icons/calendar/2x/cal_10_v2.png",
 	"https://ssl.gstatic.com/calendar/images/dynamiclogo_2020q4/calendar_11_2x.png": "icons/calendar/2x/cal_11_v2.png",
 	"https://ssl.gstatic.com/calendar/images/dynamiclogo_2020q4/calendar_12_2x.png": "icons/calendar/2x/cal_12_v2.png",
 	"https://ssl.gstatic.com/calendar/images/dynamiclogo_2020q4/calendar_13_2x.png": "icons/calendar/2x/cal_13_v2.png",
@@ -118,6 +121,7 @@ const rules = {
 	"https://ssl.gstatic.com/calendar/images/dynamiclogo_2020q4/calendar_29_2x.png": "icons/calendar/2x/cal_29_v2.png",
 	"https://ssl.gstatic.com/calendar/images/dynamiclogo_2020q4/calendar_30_2x.png": "icons/calendar/2x/cal_30_v2.png",
 	"https://ssl.gstatic.com/calendar/images/dynamiclogo_2020q4/calendar_31_2x.png": "icons/calendar/2x/cal_31_v2.png",
+	"https://www.gstatic.com/companion/icon_assets/calendar_2020q4_2x.png": "icons/calendar/2x/cal_31_v2.png",
 	"https://www.gstatic.com/companion/icon_assets/fgdY29RxT2yHBfEODHlF70ZI3ytOaPoX/calendar_v3_2x.png": "icons/calendar_40x.png",
 	"https://www.gstatic.com/companion/icon_assets/fgdY29RxT2yHBfEODHlF70ZI3ytOaPoX/logo_calendar_v3_64dp.svg": "icons/logo_calendar_64dp.svg",
 

@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
-	"version": "1.3.0",
-    "name": "Classic Google Icons", 
+	"version": "1.4.0",
+    "name": "Classic Google Icons",
     "description": "Use the pre-2020 Material Design icons for Google products like Gmail, Calendar, and Maps.",
 
     "author": "dangeredwolf",
